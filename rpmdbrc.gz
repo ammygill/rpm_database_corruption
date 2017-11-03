@@ -1,0 +1,56 @@
+.\" Manpage for rpmdbrc
+.TH RPMDBSC 8 "25 October 2017" "1.0" "System Manager's Manual"
+
+.SH NAME
+rpmdbrc \- RPM Database Recovery Tool.
+
+.SH SYNOPSIS
+.B rpmdbrc [OPTIONS]...
+
+.SH DESCRIPTION
+rpmdbrc is a tool to recover the corrupted RPM Database. It can check the status, integrity and third party packages included if any in your database. Also, it can fix the issue and take the backup of database.
+
+.SH OPTIONS
+Mandatory options for long arguments are mandatory for short options too.
+
+.B -b, --backup
+        Take the backup of current database and checks whether it is restorable or not.
+." next paragraph
+.PP
+.B -c, --check
+   	Check the current status of RPM database.
+." next paragraph
+.PP
+.B -f, --dbfix
+   	Verify and fix the database issue.
+." next paragraph
+.PP
+.B -i, --info
+   	Display the count of third party packages and Redhat owned packages.
+." next paragraph
+.PP
+.B -ivd, --info-details
+        Display the list of all the third party Packages and info of Redhat Packages.
+." next paragraph
+.PP
+
+.B -I, --integrity
+   	Display the corrupted Packages of the System.
+." next paragraph
+.PP
+.B -t, --thirdparty
+   	Display Third party Packages , binaries and modules.
+
+.SH AUTHOR
+Sneha Joshi <snejoshi@redhat.com>
+.br
+Shruti Kavishwar <skavishw@redhat.com>
+.br
+Amrinder Gill <amrsingh@redhat.com>
+
+.SH COPYRIGHT
+This is a free tool. You are free to change and redistribute it. This tool is with ABSOLUTE NO WARRENTY, to the extent permitted by law.
+
+.SH SEE ALSO
+rpm(8)
+

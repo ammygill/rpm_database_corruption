@@ -1,5 +1,5 @@
 #RPM Database Recovery  Script
-
+# just for fun
 # "#######################################################"
 # "##	1)Database Checking                             ##"
 # "##	2)Database fixing                       	##"
